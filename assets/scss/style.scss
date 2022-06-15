@@ -1,0 +1,587 @@
+@import "./reset.scss";
+@import "./media.scss";
+@import "./swiper-style.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fira Sans", sans-serif;
+}
+
+span {
+    display: block;
+}
+
+p {
+    line-height: 150%;
+}
+
+p,
+span,
+li {
+    font-size: 18px;
+    @include max800 {
+        font-size: 16px;
+    }
+}
+
+h1 {
+    font-size: 68px;
+    color: #111111;
+    line-height: 110%;
+    letter-spacing: 2px;
+    @include max1280 {
+        font-size: 5vw;
+    }
+    @include max576 {
+        font-size: 8vw;
+        padding-left: 13px;
+        letter-spacing: 1px;
+    }
+}
+
+h1 > span {
+    font-size: inherit;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 32px;
+    color: #111111;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    @include max800 {
+        font-size: 28px;
+    }
+    @include max576 {
+        font-size: 26px;
+    }
+}
+
+h3 {
+    font-size: 26px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    @include max576 {
+        font-size: 24px;
+        letter-spacing: 1.3px;
+    }
+}
+
+a {
+    text-decoration: none;
+    transition: 0.2s;
+    display: inline-block;
+    color: #757575;
+    &:hover {
+        text-decoration: underline;
+        transform: scale(102%);
+        transition: 0.2s;
+    }
+}
+
+.container {
+    max-width: 1440px;
+    /* height: 100vh; */
+    margin: 0 auto;
+    @include max1370 {
+        width: 100%;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: max-content 150px auto;
+    grid-template-columns: 75% 25%;
+    grid-template-areas:
+        "header header"
+        "contacts right"
+        "left right";
+    @include min1920 {
+        grid-template-rows: 485px 150px 77%;
+    }
+    @include max1370 {
+        grid-template-columns: 73% 27%;
+    }
+    @include max1050 {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "header"
+            "contacts"
+            "right"
+            "left";
+    }
+    @include max800 {
+        grid-template-rows: max-content 120px auto;
+    }
+    @include max576 {
+        grid-template-rows: max-content 150px auto;
+    }
+}
+
+/* HEADER */
+
+.header {
+    grid-area: header;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-left: 3vw;
+    overflow: hidden;
+    &__h-line {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #eeeeee;
+        top: 62%;
+        @include max1370 {
+            top: 64%;
+        }
+        @include max1280 {
+            top: 61%;
+        }
+        @include max1050 {
+            top: 62%;
+        }
+        @include max800 {
+            top: 60%;
+        }
+        @include max576 {
+            display: none;
+        }
+    }
+    &__v-line {
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background-color: #eeeeee;
+        top: 0%;
+        left: 94%;
+        @include max576 {
+            display: none;
+        }
+    }
+    &__black-square {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 57%;
+        left: 92.3%;
+        background-color: #333333;
+        @include max1370 {
+            top: 58.5%;
+        }
+        @include max1280 {
+            top: 55%;
+        }
+        @include max1050 {
+            left: 91.8%;
+        }
+        @include max800 {
+            width: 30px;
+            height: 30px;
+            left: 92.2%;
+        }
+        @include max576 {
+            display: none;
+        }
+    }
+    &__job-title {
+        font-size: 30px;
+        color: #333333;
+        font-weight: 300;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-top: 30px;
+        @include max1280 {
+            font-size: 28px;
+        }
+        @include max1050 {
+            font-size: 24px;
+        }
+        @include max800 {
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+        @include max576 {
+            font-size: 16px;
+            line-height: 140%;
+        }
+        span {
+            font-size: inherit;
+            display: inline;
+            margin-left: -11px;
+            @include max800 {
+                margin-left: -8px;
+            }
+            @include max576 {
+                padding-left: 15px;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.header > img {
+    width: 19vw;
+    height: fit-content;
+    margin-left: 290px;
+    z-index: 1;
+    @include min1920 {
+        height: 485px;
+        width: 288px;
+    }
+    @include max1280 {
+        width: 21vw;
+        margin-left: 175px;
+    }
+    @include max1050 {
+        margin-left: 150px;
+    }
+    @include max800 {
+        margin-left: 65px;
+        width: 23vw;
+    }
+    @include max576 {
+        width: 34vw;
+        margin-left: 0;
+    }
+}
+
+/* CONTACTS */
+
+.contacts {
+    grid-area: contacts;
+    display: flex;
+    background-color: #333333;
+    justify-content: space-between;
+    padding: 0px 6vw;
+    align-items: center;
+
+    /* position: relative;
+    left: -23%;
+    padding-left: 14.5em;
+    width: 123%; */
+    @include max576 {
+        flex-wrap: wrap;
+        padding: 10px 3vw;
+        justify-content: center;
+    }
+    div {
+        @include max576 {
+            width: 50%;
+            text-align: center;
+        }
+    }
+    &__title {
+        font-size: 22px;
+        color: #ebebeb;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        @include max800 {
+            font-size: 20px;
+        }
+        @include max576 {
+            font-size: 16px;
+        }
+    }
+    &__info {
+        color: #ebebeb;
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 15px;
+        letter-spacing: 0.8px;
+        @include max800 {
+            font-size: 16px;
+        }
+        @include max576 {
+            font-size: 14px;
+        }
+        @include max320 {
+            letter-spacing: 0.3px;
+        }
+    }
+}
+
+/* Main info block */
+
+.main-info {
+    grid-area: left;
+    padding-bottom: 50px;
+}
+
+.main-info > div {
+    margin-top: 50px;
+}
+
+.main-info > div > h2 {
+    margin-bottom: 30px;
+}
+
+.about-me,
+.work-exp {
+    padding: 0 3vw;
+}
+
+.about-me > p:first-of-type {
+    margin-bottom: 10px;
+}
+
+.projects > h2 {
+    padding: 0 3vw;
+}
+
+.work-exp > div {
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.work-exp {
+    &__job-title {
+        color: #757575;
+        font-weight: 300;
+        font-size: 22px;
+        @include max800 {
+            font-size: 20px;
+        }
+    }
+    &__work-place {
+        margin-top: 15px;
+    }
+    &__descr {
+        margin-top: 15px;
+    }
+}
+
+/* Additional info block */
+
+.add-info {
+    grid-area: right;
+    background-color: #f3f3f3;
+    padding: 100px 2.5em 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    @include max1050 {
+        justify-content: center;
+        padding: 50px 2.5em;
+    }
+    @include max576 {
+        padding: 40px 3vw;
+    }
+    &__wrapper {
+        @include max1050 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    &__block {
+        margin-top: 90px;
+        width: 100%;
+        &:first-child {
+            margin-top: 0;
+            @include max1050 {
+                width: 100%;
+            }
+        }
+        &:nth-child(3) {
+            @include max1050 {
+                text-align: center;
+            }
+            @include max576 {
+                text-align: start;
+            }
+        }
+        @include max1050 {
+            width: 50%;
+            margin-top: 60px;
+        }
+        @include max576 {
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        h2 {
+            margin-bottom: 34px;
+            text-align: center;
+            @include max576 {
+                font-size: 24px;
+            }
+        }
+    }
+    &__links {
+        align-self: flex-end;
+        flex-wrap: wrap;
+        &.links {
+            @include max1050 {
+                display: none;
+            }
+        }
+    }
+}
+
+.skills-list {
+    padding-left: 1.5em;
+    @include max1050 {
+        column-count: 3;
+        // column-gap: 10%;
+    }
+    @include max576 {
+        column-count: 2;
+    }
+}
+
+.skills-item {
+    margin-bottom: 21px;
+    list-style: square;
+    list-style-position: outside;
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 300;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @include max1050 {
+        font-size: 18px;
+    }
+    @include max800 {
+        font-size: 16px;
+    }
+}
+
+.education {
+    margin-top: 30px;
+    &:first-of-type {
+        margin-top: 0;
+    }
+    @include max576 {
+        width: 84%;
+    }
+}
+
+.education-date {
+    color: #757575;
+    font-weight: 200;
+    font-size: 22px;
+    @include max800 {
+        font-size: 20px;
+    }
+}
+
+.education-info {
+    margin-top: 15px;
+    line-height: 130%;
+    font-weight: 300;
+}
+
+.language-info {
+    font-weight: 300;
+}
+
+.links {
+    display: flex;
+    @include max1050 {
+        padding: 30px 0;
+        background-color: #ebebeb;
+        width: 100%;
+        justify-content: center;
+    }
+}
+.links_mob {
+    display: none;
+    @include max1050 {
+        display: flex;
+        width: 65%;
+        justify-content: space-between;
+    }
+    @include max576 {
+        width: 96%;
+    }
+}
+
+.tg-link,
+.github-link,
+.codepen-link {
+    color: #886370;
+    margin-top: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    @include max1050 {
+        margin-top: 0;
+        width: unset;
+    }
+    @include max800 {
+        font-size: 16px;
+    }
+    @include max576 {
+        font-size: 15px;
+    }
+}
+
+.tg-link {
+    margin-bottom: 25px;
+    margin-top: 0;
+    &::before {
+        content: "";
+        display: inline-flex;
+        background: url(../img/telegram-1.svg) no-repeat;
+        width: 32px;
+        height: 32px;
+        background-size: 100%;
+        margin-right: 10px;
+        @include max320 {
+            width: 28px;
+            height: 28px;
+            margin-right: 8px;
+        }
+    }
+    @include max1050 {
+        margin-bottom: 0;
+    }
+}
+
+.github-link::before {
+    content: "";
+    background: url(../img/github.svg) no-repeat;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 13px;
+    background-size: 100%;
+    @include max320 {
+        width: 28px;
+        height: 28px;
+        margin-right: 8px;
+    }
+}
+
+.codepen-link::before {
+    content: "";
+    background: url(../img/codepen.svg) no-repeat;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 13px;
+    background-size: 100%;
+    @include max320 {
+        width: 28px;
+        height: 28px;
+        margin-right: 8px;
+    }
+}

@@ -1,0 +1,180 @@
+@import "./media.scss";
+
+/* SLIDER SWIPER*/
+
+.swiper {
+    width: 100%;
+    height: 900px;
+    @include max1370 {
+        height: 920px;
+    }
+    @include max1280 {
+        height: 820px;
+    }
+    @include max1050 {
+        height: 860px;
+    }
+    @include max800 {
+        height: 740px;
+    }
+    @include max576 {
+        height: 640px;
+    }
+    @include max320 {
+        height: 690px;
+    }
+}
+
+.img-slider {
+    width: 100%;
+    height: 615px;
+    @include max1280 {
+        height: 505px;
+    }
+    @include max1050 {
+        height: 580px;
+    }
+    @include max800 {
+        height: 450px;
+    }
+    @include max576 {
+        height: 240px;
+    }
+}
+
+.swiper-zoom-container {
+    height: auto;
+}
+
+.swiper-zoom-container > img {
+    width: 100%;
+    height: 580px;
+    object-fit: cover;
+    /* -webkit-box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.25);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.25);
+    box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.25); */
+
+    @include max1280 {
+        height: 465px;
+    }
+    @include max1050 {
+        height: 540px;
+    }
+    @include max800 {
+        height: 410px;
+    }
+    @include max576 {
+        height: 200px;
+    }
+    @include max360 {
+        height: 190px;
+    }
+}
+
+.slide-info {
+    padding: 0 3vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    &__inline-link {
+        display: inline;
+        &:hover {
+            color: #333333;
+            transform: scale(100.5%);
+        }
+    }
+    &__link {
+        width: 300px;
+        margin-top: 20px;
+        letter-spacing: 0.5px;
+        font-weight: 300;
+        font-size: 18px;
+        text-transform: uppercase;
+        border: solid 1px #757575;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 42px;
+        background-color: #333333;
+        color: #ebebeb;
+        &:hover {
+            text-decoration: none;
+            color: #757575;
+            background-color: transparent;
+        }
+        @include max576 {
+            width: 90%;
+            font-size: 16px;
+        }
+    }
+}
+
+.slide-info > h3 {
+    width: 100%;
+}
+
+.slide-info > p {
+    width: 90%;
+    @include max576 {
+        width: 100%;
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    top: 82%;
+    color: #333333;
+    font-weight: 300;
+    &:hover {
+        font-weight: bold;
+    }
+    @include max1280 {
+        top: 78%;
+    }
+    @include max1050 {
+        top: 82%;
+    }
+    @include max800 {
+        top: 77%;
+    }
+    @include max576 {
+        top: 42.4%;
+    }
+    @include max320 {
+        top: 39.3%;
+    }
+}
+
+.swiper-button-next {
+    @include max576 {
+        right: 3%;
+    }
+}
+.swiper-button-prev {
+    @include max576 {
+        left: 3%;
+    }
+}
+
+:root {
+    @include max1280 {
+        --swiper-navigation-size: 38px;
+    }
+    @include max800 {
+        --swiper-navigation-size: 32px;
+    }
+    @include max576 {
+        --swiper-navigation-size: 26px;
+    }
+}
+
+.swiper-pagination-fraction > span {
+    display: inline-block;
+}
+
+.swiper-pagination-bullet-active {
+    background: #333333;
+}

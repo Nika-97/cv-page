@@ -1,0 +1,133 @@
+/*
+ * Основные точки перехода
+ * Идем от Десктопа к мобильникам
+ */
+
+
+// Устройства X-Small (портретные телефоны, менее 576 пикселей)
+// Нет медиа-запроса для `xs`, так как это значение по умолчанию в Bootstrap
+
+
+// Больше fullHD
+@media (min-width: 1920px) {
+
+}
+@mixin min1920 {
+  @media (min-width: 1920px) {
+    @content;
+  }
+}
+
+
+//Средние мониторы
+@media (max-width: 1900px) {
+}
+@mixin max1900 {
+  @media (max-width: 1900px) {
+    @content;
+  }
+}
+
+@media (max-width: 1670px) {
+}
+@mixin max1670 {
+  @media (max-width: 1670px) {
+    @content;
+  }
+}
+
+// Ноутбуки  и квадратные мониторы и горизонтальные планшеты
+@media (max-width: 1450px) {
+
+}
+@mixin max1450 {
+  @media (max-width: 1450px) {
+    @content;
+  }
+}
+
+@media (max-width: 1370px) {
+
+}
+@mixin max1370 {
+  @media (max-width: 1370px) {
+    @content;
+  }
+}
+
+@media (max-width: 1280px) {
+
+}
+@mixin max1280 {
+  @media (max-width: 1280px) {
+    @content;
+  }
+}
+
+// Планшеты вертикальные
+@media (max-width: 1050px) {
+
+}
+@mixin max1050 {
+  @media (max-width: 1050px) {
+    @content;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1050px) {
+
+}
+@mixin max1050-landscape {
+  @media (orientation: landscape) and (max-width: 1050px) {
+    @content;
+  }
+}
+
+
+// Устройства Medium (планшеты, 768 пикселей и ниже)
+@media (max-width: 800px) {
+
+}
+@mixin max800 {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 800px) {
+
+}
+@mixin max800-landscape {
+  @media (orientation: landscape) and (max-width: 800px) {
+    @content;
+  }
+}
+
+
+// Устройства Small Телефоны
+@media (max-width: 576px) {
+
+}
+@mixin max576 {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+@media (max-width: 360px) {
+
+}
+@mixin max360 {
+  @media (max-width: 360px) {
+    @content;
+  }
+}
+
+@media (max-width: 320px) {
+
+}
+@mixin max320 {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
