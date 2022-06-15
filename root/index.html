@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="grid">
+
+            <div class="header">
+                <div class="header__h-line"></div>
+                <div class="header__v-line"></div>
+                <div class="header__black-square"></div>
+
+                <div class="header__info">
+                    <h1>
+                        <span class="text-bold">Вероника</span>
+                        Купцова
+                    </h1>
+                    <span class="header__job-title">
+                        > junior-frontend/
+                        <span>верстальщик</span>
+                    </span>
+                </div>
+                <img src="./assets/img/my-photo.jpg" alt="my-photo">
+            </div>
+
+            <div class="contacts">
+                <div>
+                    <span class="contacts__title">
+                        Телефон
+                    </span>
+                    <a class="contacts__info" href="tel:+79537353250">7 (953) 735 32 50</a>
+
+                </div>
+                <div>
+                    <span class="contacts__title">
+                        E-mail
+                    </span>
+                    <a class="contacts__info" href="mailto:verkup.197@gmail.com">verkup.197@gmail.com</a>
+                </div>
+                <div>
+                    <span class="contacts__title">
+                        Город
+                    </span>
+                    <span class="contacts__info">Рязань</span>
+                </div>
+            </div>
+
+            <div class="main-info">
+                <div class="about-me">
+                    <h2>О себе</h2>
+                    <p>
+                        Был опыт деятельности в сферах 3D-дизайна, интернет-маркетинга и SEO. Постепенно при работе в
+                        области
+                        SEO оптимизации сайтов стала понимать, что для меня более интересен сам процесс разработки
+                        сайтов и приложений, потому
+                        было решено сменить род деятельности.</p>
+                    <p> За последний год занималась изучением и практикой кроссбраузерной и адаптивной верстки сайтов.
+                        Нравится узнавать новое и учиться, внимательна к деталям, скрупулёзно подхожу к задачам.
+                        Планирую развиваться в frontend-разработке сайтов и web-приложений, на данный момент изучаю
+                        Vue.js.</p>
+                </div>
+
+                <div class="projects">
+                    <h2>Проекты</h2>
+
+                    <!-- Slider main container -->
+                    <div class="swiper" id="main-slider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+
+                                <div class="swiper img-slider" id="img-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/alltobiz-main.png" alt="alltobiz-site-main-page">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/alltobiz-page.png"
+                                                    alt="alltobiz-site-inner-page">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/alltobiz-page-1.png"
+                                                    alt="alltobiz-site-inner-page">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+
+                                <div class="slide-info">
+                                    <h3>Alltobiz</h3>
+                                    <p>Верстка сайта маркетингового агентства. Собрано на HTML/CSS(SCSS), jQuery, Gulp с
+                                        применением слайдеров, табов, поиска, также используются модальные
+                                        окна, чекбоксы, форма обратной связи, раскрывающееся на весь экран адаптивное
+                                        меню, реализованы анимации через wow.js и css
+                                        animations. Сайт оптимизирован для мобильных устройств.
+                                    </p>
+                                    <a target="_blank" href="https://marketing.alltobiz.ru/nastroika-yadirect/"
+                                        class="slide-info__link">Ознакомиться с проектом</a>
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper img-slider" id="img-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/dysless1.png" alt="dysless-site">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/dysless2.png" alt="dysless-site">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/dysless3.png" alt="dysless-site">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/dysless4.png" alt="dysless-site">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/dysless5.png" alt="dysless-site">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/dysless6.png" alt="dysless-site">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+
+                                <div class="slide-info">
+                                    <h3>Dysless</h3>
+                                    <p>Разработка адаптивного корпоративного сайта с нуля под October
+                                        CMS для центра по лечению дислексии. Моей задачей была верстка
+                                        страниц сайта. Применена методология БЭМ, использованы различные виды слайдеров,
+                                        аккордеонов, табы, реализован функционал свернутого бокового меню. Сайт
+                                        находится в процессе разработки <a class="slide-info__inline-link"
+                                            href="https://github.com/Nika-97/Dysless" target="_blank">(посмотреть часть
+                                            кода на GitHub)</a>.</p>
+                                    <a target="_blank" href="https://dysless.ru/" class="slide-info__link">Ознакомиться
+                                        с проектом</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper img-slider" id="img-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/loewe.png" alt="loewe">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/loewe-card1.png" alt="loewe-showroom">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/loewe-card.png" alt="loewe-showroom">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/loewe-card2.png" alt="loewe-showroom">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+
+                                <div class="slide-info">
+                                    <h3>Loewe</h3>
+                                    <p>Двуязычный showroom сайт немецкого магазина цифровой техники. Общее задание
+                                        заключалось в изменении админ панели под новые требования
+                                        клиента. Моя задача заключалась в анализе части чужого кода,
+                                        точном переносе и адаптации фронтенда главной страницы и
+                                        карточек товара в 3D шоуруме под новую структуру
+                                        <a class="slide-info__inline-link"
+                                            href="https://showroom.loewe.tv/sphere/?s=2&lang=en"
+                                            target="_blank">(перейти
+                                            в шоурум для просмотра карточки товара)</a>.
+                                    </p>
+                                    <a target="_blank" href="https://showroom.loewe.tv/"
+                                        class="slide-info__link">Ознакомиться с проектом</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper img-slider" id="img-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/png1.png" alt="pravo-na-gorod-site">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/png2.png" alt="pravo-na-gorod-site">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/png3.png" alt="pravo-na-gorod-site">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/png4.png" alt="pravo-na-gorod-site">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/png5.png" alt="pravo-na-gorod-site">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+
+                                <div class="slide-info">
+                                    <h3>Право на город</h3>
+                                    <p>Адаптивный медиа-информационный сайт. Моя задача состояла в
+                                        верстке всех страниц сайта. Были добавлены различные виды слайдеров, табы,
+                                        аккордеон, использован БЭМ. Также осуществляла шаблонизацию верстки для
+                                        Wordpress и создавала
+                                        контентные блоки через плагин lazy block. Сайт находится на данный момент в
+                                        процессе разработки <a class="slide-info__inline-link"
+                                            href="https://github.com/Nika-97/media-site" target="_blank">(посмотреть
+                                            часть
+                                            кода на GitHub)</a>.</p>
+                                    <a target="_blank" href="https://pravonagorod.com/"
+                                        class="slide-info__link">Ознакомиться с проектом</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper img-slider" id="img-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/pet1.png" alt="pet-shelter-site-template">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/pet2.png" alt="pet-shelter-site-template">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/pet3.png" alt="pet-shelter-site-template">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+
+                                <div class="slide-info">
+                                    <h3>Cozy house</h3>
+                                    <p>Адаптивная верстка шаблона сайта приюта для домашних животных, выполненная в
+                                        целях обучения. Также для изучения был реализован небольшой backend на node.js с
+                                        использованием БД на SQLite.</p>
+                                    <a target="_blank" href="https://github.com/Nika-97/pet-shelter-site"
+                                        class="slide-info__link">Ознакомиться с проектом</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper img-slider" id="img-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/yoga1.png" alt="yoga-landing-template">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/yoga2.png" alt="yoga-landing-template">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/yoga3.png" alt="yoga-landing-template">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-zoom-container">
+                                                <img src="./assets/img/yoga4.png" alt="yoga-landing-template">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+
+                                <div class="slide-info">
+                                    <h3>Beryoga</h3>
+                                    <p>Адаптивная верстка лендинга йога-центра, выполненная в
+                                        целях обучения.</p>
+                                    <a target="_blank" href="https://github.com/Nika-97/yoga-landing-template"
+                                        class="slide-info__link">Ознакомиться с проектом</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <!-- navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+
+                <div class="work-exp">
+                    <h2>Опыт работы</h2>
+                    <div>
+                        <span class="work-exp__job-title">Специалист по продвижению сайтов
+                            (SEO): март 2020 — март 2021</span>
+                        <span class="work-exp__work-place">Агентство интернет-маркетинга «Контраст», Рязань</span>
+                        <ul class="work-exp__descr">
+                            <li>SEO-аудит и юзабилити-аудит сайтов</li>
+                            <li>Формирование семантического ядра</li>
+                            <li>Оптимизация сайта под поисковые системы (оптимизация структуры, контента, юзабилити
+                                сайта)</li>
+                            <li>Написание ТЗ программистам, веб-дизайнерам, копирайтерам</li>
+                            <li>Формирование ссылочного профиля сайта</li>
+                            <li>Анализ статистики продвижения</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <span class="work-exp__job-title">3D-дизайнер (удаленная проектная работа): ноябрь 2019 —
+                            февраль 2021</span>
+                        <span class="work-exp__work-place">Витарус, Рязань</span>
+                        <ul class="work-exp__descr">
+                            <li>Моделирование объектов различной сложности</li>
+                            <li>Визуализация помещений по проектной рабочей документации</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <span class="work-exp__job-title">3D-дизайнер: апрель 2019 — ноябрь 2019</span>
+                        <span class="work-exp__work-place">Витарус, Рязань</span>
+                        <ul class="work-exp__descr">
+                            <li>Разработка индивидуальных 2d концепций общественных помещений</li>
+                            <li>3D моделирование объектов и визуализация помещений</li>
+                            <li>Ведение проекта от начальной стадии до сдачи</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <span class="work-exp__job-title">Менеджер по интернет-маркетингу: апрель 2017 — июль
+                            2018</span>
+                        <span class="work-exp__work-place">ООО «Эдрус», Рязань</span>
+                        <ul class="work-exp__descr">
+                            <li>Настройка и ведение контекстной рекламы в Яндекс.Директ и Google Ads</li>
+                            <li>Анализ эффективности рекламных кампаний с помощью Яндекс.Метрика и Google Analytics
+                            </li>
+                            <li>Создание и продвижение сообществ в социальных сетях, создание и размещение контента
+                                на
+                                форумах</li>
+                            <li>Таргетированная реклама</li>
+                            <li>Рерайтинг / Копирайтинг</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="add-info">
+                <div class="add-info__wrapper">
+                    <div class="add-info__block">
+                        <h2>Навыки</h2>
+                        <ul class="skills-list">
+                            <li class="skills-item">HTML</li>
+                            <li class="skills-item">CSS (Flex, Grid)</li>
+                            <li class="skills-item">Sass (SCSS)</li>
+                            <li class="skills-item">Photoshop</li>
+                            <li class="skills-item">Figma</li>
+                            <li class="skills-item">JavaScript</li>
+                            <li class="skills-item">jQuery</li>
+                            <li class="skills-item">Gulp</li>
+                            <li class="skills-item">Git</li>
+                            <li class="skills-item">БЭМ</li>
+                            <li class="skills-item">Начальный уровень Vue.js/Vuetify</li>
+                            <li class="skills-item">Node.js (npm)</li>
+                        </ul>
+                    </div>
+
+                    <div class="add-info__block">
+                        <h2>Образование</h2>
+                        <div class="education">
+                            <span class="education-date">2014 - 2018</span>
+                            <span class="education-info">Реклама и связи с общественностью</span>
+                            <span class="education-info">Рязанский государственный университет имени С. А.
+                                Есенина</span>
+                        </div>
+                        <div class="education">
+                            <span class="education-date">2012 - 2016</span>
+                            <span class="education-info">Рязанский музыкальный колледж им. Г. и А. Пироговых</span>
+                        </div>
+                    </div>
+
+                    <div class="add-info__block">
+                        <h2>Языки</h2>
+                        <span class="language-info">Английский — B1</span>
+                    </div>
+                </div>
+                <div class="add-info__links links">
+                    <a target="_blank" class="tg-link" href="https://t.me/nikachan0_0">Telegram</a>
+                    <a target="_blank" class="github-link" href="https://github.com/Nika-97?tab=repositories">GitHub</a>
+                    <a target="_blank" class="codepen-link" href="https://codepen.io/nika-97">CodePen</a>
+                </div>
+            </div>
+
+            <div class="links">
+                <div class="links_mob">
+                    <a target="_blank" class="tg-link" href="https://t.me/nikachan0_0">Telegram</a>
+                    <a target="_blank" class="github-link" href="https://github.com/Nika-97?tab=repositories">GitHub</a>
+                    <a target="_blank" class="codepen-link" href="https://codepen.io/nika-97">CodePen</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.min.js"></script>
+</body>
+
+</html>
