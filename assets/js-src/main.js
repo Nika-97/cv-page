@@ -28,17 +28,17 @@ const swiperImage = new Swiper('#img-slider', {
     breakpoints: {
         320: {
             zoom: {
-                maxRatio: 3
+                maxRatio: 3,
             }
         },
         576: {
             zoom: {
-                maxRatio: 2
+                maxRatio: 2,
             }
         },
         1280: {
             zoom: {
-                maxRatio: 1.2
+                maxRatio: 1.2,
             }
         }
     },
