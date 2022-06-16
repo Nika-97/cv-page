@@ -109,7 +109,7 @@ a {
         "contacts right"
         "left right";
     @include min1920 {
-        grid-template-rows: 485px 150px 77%;
+        grid-template-rows: 485px 150px 79%;
     }
     @include max1370 {
         grid-template-columns: 73% 27%;
@@ -332,6 +332,12 @@ a {
 .about-me,
 .work-exp {
     padding: 0 3vw;
+    @include max1050 {
+        width: 85%;
+    }
+    @include max800 {
+        width: 100%;
+    }
 }
 
 .about-me > p:first-of-type {
@@ -343,7 +349,7 @@ a {
 }
 
 .work-exp > div {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     &:last-child {
         margin-bottom: 0;
     }
@@ -354,15 +360,35 @@ a {
         color: #757575;
         font-weight: 300;
         font-size: 22px;
+        margin-top: 15px;
+        line-height: 130%;
         @include max800 {
             font-size: 20px;
+        }
+        &:first-of-type {
+            margin-top: 0;
         }
     }
     &__work-place {
         margin-top: 15px;
+        line-height: 120%;
+        a {
+            color: #886370;
+            font-weight: 500;
+            display: inline;
+        }
     }
     &__descr {
         margin-top: 15px;
+        li {
+            line-height: 140%;
+            margin-top: 10px;
+            list-style: square;
+            margin-left: 20px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
     }
 }
 
@@ -423,12 +449,11 @@ a {
         }
     }
     &__links {
+        display: flex;
         align-self: flex-end;
         flex-wrap: wrap;
-        &.links {
-            @include max1050 {
-                display: none;
-            }
+        @include max1050 {
+            display: none;
         }
     }
 }
@@ -491,17 +516,18 @@ a {
     font-weight: 300;
 }
 
-.links {
-    display: flex;
+.footer-links {
+    display: none;
     @include max1050 {
+        display: flex;
         padding: 30px 0;
         background-color: #ebebeb;
         width: 100%;
         justify-content: center;
     }
 }
-.links_mob {
-    display: none;
+.footer-links_mob {
+   
     @include max1050 {
         display: flex;
         width: 65%;

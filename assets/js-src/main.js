@@ -10,7 +10,6 @@ const swiper = new Swiper('#main-slider', {
     pagination: {
         el: '.swiper-pagination',
     },
-
 });
 
 
@@ -24,15 +23,25 @@ const swiperImage = new Swiper('#img-slider', {
         type: 'fraction',
     },
     nested: true,
+    zoom: true,
 
     breakpoints: {
-        // when window width is >= 320px
         320: {
-            zoom: true,
+            zoom: {
+                maxRatio: 3
+            }
         },
-        // when window width is >= 800px
-        800: {
-            zoom: false,
+        576: {
+            zoom: {
+                maxRatio: 2
+            }
         },
-    }
+        1280: {
+            zoom: {
+                maxRatio: 1.2
+            }
+        }
+    },
 });
+
+
