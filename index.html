@@ -9,6 +9,24 @@
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.min.css">
+
+    <script>
+        var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+        if (isSafari) {
+            var cssId = 'safariStyles';  // you could encode the css path itself to generate id..
+            if (!document.getElementById(cssId)) {
+                var head = document.getElementsByTagName('head')[0];
+                var link = document.createElement('link');
+                link.id = cssId;
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = './assets/css/safari.css';
+                link.media = 'all';
+                head.appendChild(link);
+            }
+        }
+    </script>
 </head>
 
 <body>
