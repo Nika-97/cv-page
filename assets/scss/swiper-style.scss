@@ -14,8 +14,11 @@
     @include max1050 {
         height: 860px;
     }
+    @include max840 {
+        height: 905px;
+    }
     @include max800 {
-        height: 740px;
+        height: 760px;
     }
     @include max576 {
         height: 640px;
@@ -136,6 +139,9 @@
     }
     @include max1050 {
         top: 82%;
+    }
+    @include max840 {
+        top: 79%;
     }
     @include max800 {
         top: 77%;
