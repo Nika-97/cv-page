@@ -1,3 +1,10 @@
+.header>img {
+    width: auto;
+    margin-left: 290px;
+    z-index: 1;
+    height: 400px;
+}
+
 @media screen and (max-width: 1670px) {
     .header>img {
         width: auto;
