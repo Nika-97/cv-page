@@ -84,6 +84,15 @@
 }
 
 
+@media (max-width: 840px) {
+
+}
+@mixin max840 {
+  @media (max-width: 840px) {
+    @content;
+  }
+}
+
 // Устройства Medium (планшеты, 768 пикселей и ниже)
 @media (max-width: 800px) {
 

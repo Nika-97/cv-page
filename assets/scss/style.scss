@@ -188,10 +188,15 @@ a {
         @include max1050 {
             left: 91.8%;
         }
+        @include max840 {
+            left: 91%;
+            top: 54%;
+        }
         @include max800 {
             width: 30px;
             height: 30px;
             left: 92.2%;
+            top: 55%;
         }
         @include max576 {
             display: none;
@@ -235,7 +240,8 @@ a {
 
 .header > img {
     width: 19vw;
-    height: fit-content;
+    // height: fit-content;
+    height: -webkit-fill-available;
     margin-left: 290px;
     z-index: 1;
     @include min1920 {
@@ -249,12 +255,15 @@ a {
     @include max1050 {
         margin-left: 150px;
     }
+    @include max840 {
+        margin-left: 40px;
+    }
     @include max800 {
         margin-left: 65px;
         width: 23vw;
     }
     @include max576 {
-        width: 34vw;
+        width: 35vw;
         margin-left: 0;
     }
 }
