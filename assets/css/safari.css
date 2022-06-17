@@ -1,3 +1,9 @@
+@media (min-width: 1920px) {
+    .grid {
+        grid-template-rows: 400px 150px 79%;
+    }
+}
+
 .header>img {
     width: auto;
     margin-left: 290px;
@@ -17,21 +23,21 @@
 @media screen and (max-width: 1450px) {
     .header>img {
         width: initial;
-        height: initial;
+        height: 400px;
     }
 }
 
 @media screen and (max-width: 1370px) {
     .header>img {
         width: initial;
-        height: initial;
+        height: 400px;
     }
 }
 
 @media screen and (max-width: 1280px) {
     .header>img {
         width: initial;
-        height: initial;
+        height: 400px;
         margin-left: 175px;
     }
 }
@@ -39,21 +45,21 @@
 @media screen and (max-width: 1050px) {
     .header>img {
         width: initial;
-        height: initial;
+        height: 400px;
     }
 }
 
 @media screen and (max-width: 840px) {
     .header>img {
         width: initial;
-        height: initial;
+        height: 400px;
     }
 }
 
 @media screen and (max-width: 800px) {
     .header>img {
         width: initial;
-        height: initial;
+        height: 400px;
         margin-left: 51px;
     }
 }
@@ -76,6 +82,6 @@
 @media screen and (max-width: 320px) {
     .header>img {
         width: initial;
-        height: initial;
+        height: 200px;
     }
 }
