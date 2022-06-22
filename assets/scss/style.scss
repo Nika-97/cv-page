@@ -349,8 +349,19 @@ a {
     }
 }
 
-.about-me > p:first-of-type {
-    margin-bottom: 10px;
+.about-me {
+    p {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__tg-link {
+        display: inline-block;
+        color: #886370;
+        font-weight: 500;
+        font-size: 18px;
+    }
 }
 
 .projects > h2 {
@@ -536,7 +547,6 @@ a {
     }
 }
 .footer-links_mob {
-   
     @include max1050 {
         display: flex;
         width: 65%;
