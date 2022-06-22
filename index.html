@@ -8,6 +8,7 @@
     <title>Resume - Veronica Kuptsova</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="./assets/css/style.min.css">
 
     <script>
@@ -27,14 +28,17 @@
             }
         }
     </script>
+
+
 </head>
 
 <body>
-
     <div class="container">
         <div class="grid">
 
             <div class="header">
+
+                <!-- header background lines-->
                 <div class="header__h-line"></div>
                 <div class="header__v-line"></div>
                 <div class="header__black-square"></div>
@@ -49,6 +53,7 @@
                         <span>верстальщик</span>
                     </span>
                 </div>
+
                 <img src="./assets/img/my-photo.jpg" alt="my-photo">
             </div>
 
@@ -82,14 +87,24 @@
                         области
                         SEO оптимизации сайтов стала понимать, что для меня более интересен сам процесс разработки
                         сайтов и приложений, потому
-                        было решено сменить род деятельности.</p>
+                        было решено сменить род деятельности.
+                    </p>
+
                     <p> За последний год занималась изучением и практикой кроссбраузерной и адаптивной верстки сайтов.
-                        Нравится узнавать новое и учиться, внимательна к деталям, скрупулёзно подхожу к задачам.
-                        Сейчас развиваюсь в области frontend-разработки сайтов и web-приложений, на данный момент изучаю
+                        Обладаю уверенными знаниями HTML/CSS и работаю с CSS пре-процессором SASS/SCSS, понимаю и
+                        применяю методологию БЭМ, также обеспечиваю интерактив на
+                        страницах с помощью JavaScript. Знаю основные принципы и команды Git, имею представление о PHP - был
+                        опыт шаблонизации верстки на Wordpress. Есть опыт на коммерческих проектах.
+                    </p>
+
+                    <p> Нравится узнавать новое и учиться, внимательна к деталям, скрупулёзно подхожу к задачам.
+                        Продолжаю развиваться в области frontend-разработки сайтов и web-приложений, на данный момент
+                        изучаю
                         Vue.js.
                     </p>
-                    <p> Мой <a target="_blank" class="about-me__tg-link"
-                        href="https://t.me/nikachan0_0">Telegram</a> для быстрого ответа при возникновении вопросов или предложений.
+
+                    <p> Мой <a target="_blank" class="about-me__tg-link" href="https://t.me/nikachan0_0">Telegram</a>
+                        для быстрого ответа при возникновении вопросов или предложений.
                     </p>
                 </div>
 
@@ -103,7 +118,7 @@
 
                             <!-- Slides -->
                             <div class="swiper-slide">
-
+                                <!-- nested slider -->
                                 <div class="swiper img-slider" id="img-slider">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
@@ -129,16 +144,18 @@
 
                                 <div class="slide-info">
                                     <h3>Alltobiz</h3>
-                                    <p>Верстка сайта маркетингового агентства. Собрано на HTML/CSS(SCSS), jQuery, Gulp с
-                                        применением слайдеров, табов, поиска, также используются модальные
+                                    <p>Помощь в адаптивной верстке главной страницы и блоков шаблона внутренних страниц
+                                        для сайта
+                                        маркетингового агентства. Собрано на
+                                        HTML/CSS(SCSS), jQuery, Gulp с
+                                        применением слайдеров, табов, также используются модальные
                                         окна, чекбоксы, форма обратной связи, раскрывающееся на весь экран адаптивное
                                         меню, реализованы анимации через wow.js и css
-                                        animations. Сайт оптимизирован для мобильных устройств.
+                                        animations.
                                     </p>
                                     <a target="_blank" href="https://marketing.alltobiz.ru/nastroika-yadirect/"
                                         class="slide-info__link">Ознакомиться с проектом</a>
                                 </div>
-
                             </div>
 
                             <div class="swiper-slide">
@@ -346,18 +363,19 @@
                                 <div class="slide-info">
                                     <h3>Beryoga</h3>
                                     <p>Адаптивная верстка лендинга йога-центра, выполненная в
-                                        целях обучения.</p>
-                                    <a target="_blank" href="https://github.com/Nika-97/yoga-landing-template"
+                                        целях обучения <a class="slide-info__inline-link"
+                                            href="https://github.com/Nika-97/yoga-landing-template"
+                                            target="_blank">(посмотреть код на GitHub)</a>.</p>
+                                    <a target="_blank" href="https://nika-97.github.io/yoga-landing-template/"
                                         class="slide-info__link">Ознакомиться с проектом</a>
                                 </div>
                             </div>
-
                         </div>
+
                         <div class="swiper-pagination"></div>
                         <!-- navigation buttons -->
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
-
                     </div>
                 </div>
 
@@ -381,8 +399,6 @@
                                 технические показатели ресурсов.</li>
                         </ul>
                     </div>
-
-
 
                     <div>
                         <span class="work-exp__job-title">Дизайнер интерьера: апрель 2019 — ноябрь 2019</span>
@@ -462,6 +478,7 @@
                 </div>
             </div>
 
+            <!-- transfer links from the side block to the footer on mobile -->
             <div class="footer-links">
                 <div class="footer-links_mob">
                     <a target="_blank" class="tg-link" href="https://t.me/nikachan0_0">Telegram</a>
@@ -470,7 +487,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
 

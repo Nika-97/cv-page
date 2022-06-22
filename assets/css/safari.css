@@ -1,43 +1,43 @@
 @media (min-width: 1920px) {
     .grid {
-        grid-template-rows: 400px 150px 79%;
+        grid-template-rows: 485px 150px 79%;
     }
 }
 
 .header>img {
-    width: auto;
+    width: 288px;
     margin-left: 290px;
     z-index: 1;
-    height: 400px;
+    height: 485px;
 }
 
 @media screen and (max-width: 1670px) {
     .header>img {
         width: auto;
-        margin-left: 290px;
+        /* margin-left: 290px;
         z-index: 1;
-        height: 400px;
+        height: 485px; */
     }
 }
 
 @media screen and (max-width: 1450px) {
     .header>img {
         width: initial;
-        height: 400px;
+        height: 485px;
     }
 }
 
 @media screen and (max-width: 1370px) {
     .header>img {
         width: initial;
-        height: 400px;
+        height: 485px;
     }
 }
 
 @media screen and (max-width: 1280px) {
     .header>img {
         width: initial;
-        height: 400px;
+        height: 450px;
         margin-left: 175px;
     }
 }
@@ -45,29 +45,39 @@
 @media screen and (max-width: 1050px) {
     .header>img {
         width: initial;
-        height: 400px;
+        height: 380px;
+        margin-left: 130px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .header>img {
+        width: initial;
+        height: 320px;
+        margin-left: 110px;
     }
 }
 
 @media screen and (max-width: 840px) {
     .header>img {
         width: initial;
-        height: 400px;
+        height: 320px;
+        margin-left: 40px;
     }
 }
 
 @media screen and (max-width: 800px) {
     .header>img {
         width: initial;
-        height: 400px;
-        margin-left: 51px;
+        height: 320px;
+        margin-left: 65px;
     }
 }
 
 @media screen and (max-width: 576px) {
     .header>img {
         width: initial;
-        height: 275px;
+        height: 260px;
         margin-left: 0;
     }
 }
@@ -75,7 +85,7 @@
 @media screen and (max-width: 360px) {
     .header>img {
         width: initial;
-        height: 200px;
+        height: 220px;
     }
 }
 

@@ -139,6 +139,12 @@ a {
     align-items: center;
     padding-left: 3vw;
     overflow: hidden;
+    @include max800-landscape {
+        justify-content: space-between;
+    }
+    @include max576 {
+        justify-content: space-between;
+    }
     &__h-line {
         position: absolute;
         width: 100%;
@@ -157,6 +163,9 @@ a {
         @include max800 {
             top: 60%;
         }
+        @include max800-landscape {
+            display: none;
+        }
         @include max576 {
             display: none;
         }
@@ -168,6 +177,9 @@ a {
         background-color: #eeeeee;
         top: 0%;
         left: 94%;
+        @include max800-landscape {
+            display: none;
+        }
         @include max576 {
             display: none;
         }
@@ -186,6 +198,7 @@ a {
             top: 55%;
         }
         @include max1050 {
+            top: 55.5%;
             left: 91.8%;
         }
         @include max840 {
@@ -197,6 +210,9 @@ a {
             height: 30px;
             left: 92.2%;
             top: 55%;
+        }
+        @include max800-landscape {
+            display: none;
         }
         @include max576 {
             display: none;
@@ -234,14 +250,17 @@ a {
                 padding-left: 15px;
                 margin-left: 0;
             }
+            @include max576-landscape {
+                padding-left: 0;
+            }
         }
     }
 }
 
 .header > img {
     width: 19vw;
-    // height: fit-content;
-    height: -webkit-fill-available;
+    height: fit-content;
+    // height: -webkit-fill-available;
     margin-left: 290px;
     z-index: 1;
     @include min1920 {
@@ -253,7 +272,10 @@ a {
         margin-left: 175px;
     }
     @include max1050 {
-        margin-left: 150px;
+        margin-left: 130px;
+    }
+    @include max1050-landscape {
+        margin-left: 95px;
     }
     @include max840 {
         margin-left: 40px;
@@ -263,7 +285,7 @@ a {
         width: 23vw;
     }
     @include max576 {
-        width: 35vw;
+        width: 36vw;
         margin-left: 0;
     }
 }
@@ -351,7 +373,7 @@ a {
 
 .about-me {
     p {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         &:last-child {
             margin-bottom: 0;
         }

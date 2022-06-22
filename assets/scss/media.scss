@@ -3,21 +3,17 @@
  * Идем от Десктопа к мобильникам
  */
 
-
 // Устройства X-Small (портретные телефоны, менее 576 пикселей)
 // Нет медиа-запроса для `xs`, так как это значение по умолчанию в Bootstrap
 
-
 // Больше fullHD
 @media (min-width: 1920px) {
-
 }
 @mixin min1920 {
   @media (min-width: 1920px) {
     @content;
   }
 }
-
 
 //Средние мониторы
 @media (max-width: 1900px) {
@@ -38,7 +34,6 @@
 
 // Ноутбуки  и квадратные мониторы и горизонтальные планшеты
 @media (max-width: 1450px) {
-
 }
 @mixin max1450 {
   @media (max-width: 1450px) {
@@ -47,7 +42,6 @@
 }
 
 @media (max-width: 1370px) {
-
 }
 @mixin max1370 {
   @media (max-width: 1370px) {
@@ -56,7 +50,6 @@
 }
 
 @media (max-width: 1280px) {
-
 }
 @mixin max1280 {
   @media (max-width: 1280px) {
@@ -66,7 +59,6 @@
 
 // Планшеты вертикальные
 @media (max-width: 1050px) {
-
 }
 @mixin max1050 {
   @media (max-width: 1050px) {
@@ -75,7 +67,6 @@
 }
 
 @media (orientation: landscape) and (max-width: 1050px) {
-
 }
 @mixin max1050-landscape {
   @media (orientation: landscape) and (max-width: 1050px) {
@@ -83,9 +74,7 @@
   }
 }
 
-
 @media (max-width: 840px) {
-
 }
 @mixin max840 {
   @media (max-width: 840px) {
@@ -95,7 +84,6 @@
 
 // Устройства Medium (планшеты, 768 пикселей и ниже)
 @media (max-width: 800px) {
-
 }
 @mixin max800 {
   @media (max-width: 800px) {
@@ -104,7 +92,6 @@
 }
 
 @media (orientation: landscape) and (max-width: 800px) {
-
 }
 @mixin max800-landscape {
   @media (orientation: landscape) and (max-width: 800px) {
@@ -112,10 +99,8 @@
   }
 }
 
-
 // Устройства Small Телефоны
 @media (max-width: 576px) {
-
 }
 @mixin max576 {
   @media (max-width: 576px) {
@@ -123,8 +108,15 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (orientation: landscape) and (max-width: 576px) {
+}
+@mixin max576-landscape {
+  @media (orientation: landscape) and (max-width: 576px) {
+    @content;
+  }
+}
 
+@media (max-width: 360px) {
 }
 @mixin max360 {
   @media (max-width: 360px) {
@@ -133,7 +125,6 @@
 }
 
 @media (max-width: 320px) {
-
 }
 @mixin max320 {
   @media (max-width: 320px) {
